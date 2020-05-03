@@ -1,0 +1,169 @@
+@charset "ISO-8859-1";
+
+form {
+	border: 3px solid #dbe2ef;
+	padding: 10px 16px 16px 16px;
+	margin-block-end: 0;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #112d4e;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f9f7f7;
+  text-align: center;
+  padding: 12px 48px;
+  font-size: 16px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link 
+.topnav a.active {
+  background-color: #3f72af;
+  color: white;
+}*/
+
+.topnav-right {
+  float: right;
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 187px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 134px; /* Stay at the top */
+  left: 0;
+  background-color: #dbe2ef;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 16px;
+  font-size: 16px;
+  color: #112d4e;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	background-color: white;
+  color: green	;
+}
+
+.bottomsidenav{
+	margin-top: 240px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.content{
+	margin-left: 200px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+label{
+	display: inline-block;
+    margin-top: 8px;
+}
+
+.adminForm{
+	margin: 120px 240px;
+	padding: 48px;
+}
+
+sup {
+	color: red;
+}
+
+.warning {
+	font-size: 0.82em;
+	color: red;
+}
+
+
+.containerdash {
+	background-color: #dbe2ef;
+	padding: 16px 16px;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 2px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #3f72af;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.split {
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	overflow-x: hidden;
+	margin: 32px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.left {
+	width: 70%;
+	left: 0;
+}
+
+.right {
+	width: 30%;
+	right: 0;
+}
+
+.centered {
+	position: absolute;
+	top: 36%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Vollkorn', serif;
+	background-color: #f9f7f7;
+	color: #112d4e;
+	margin: 0;
+}

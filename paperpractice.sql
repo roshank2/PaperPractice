@@ -62,7 +62,6 @@ CREATE TABLE Question(
 		Option3 varchar(50) NOT NULL,
 		Option4 varchar(50) NOT NULL,
 		correct_ans integer NOT NULL,
-		user_choice integer,
 		Solution varchar(540),
 		Topic_ID integer NOT NULL,
 		
@@ -70,14 +69,15 @@ CREATE TABLE Question(
 		FOREIGN KEY (Topic_ID) REFERENCES Topic(Topic_ID)
 )DEFAULT CHARSET = utf8;
 
+use paperpractice;
+
 DROP TABLE IF EXISTS Feedback;
 
 CREATE TABLE Feedback(
-		Feedback_ID integer NOT NULL,
+		Feedback_ID integer NOT NULL AUTO_INCREMENT,
 		Email_ID varchar(50) NOT NULL,
 		Fb_Description varchar(200) NOT NULL,
-		Date_added timestamp DEFAULT CURRENT_TIMESTAMP,
+		Date_added timestamp not null default now(),
 		
-		PRIMARY KEY (Feedback_ID),
-		FOREIGN KEY (Email_ID) REFERENCES User_Registration(Email_ID)
+		PRIMARY KEY (Feedback_ID)
 )DEFAULT CHARSET = utf8;

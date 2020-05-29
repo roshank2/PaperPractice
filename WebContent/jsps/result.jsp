@@ -1,3 +1,9 @@
+
+<%
+	/********************* Roshan Kumar ***********************/
+%>
+
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -6,8 +12,11 @@
 <html>
 <head>
 <meta charset=ISO-8859-1>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/styles.css">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/styles.css">
 <title>Result</title>
+<link rel="icon" type="image/png" sizes="32x32"
+	href="${pageContext.request.contextPath}/resource/favicon-32x32.png">
 <link
 	href="https://fonts.googleapis.com/css2?family=Alegreya:wght@900&family=B612:wght@700&family=Vollkorn&display=swap"
 	rel="stylesheet">
@@ -33,19 +42,22 @@
 					unattempted++;
 				}
 			}
-			
-			if(userSelectionsList.size()!=15){
+
+			if (userSelectionsList.size() != 15) {
 				unattempted = 15 - userSelectionsList.size() + unattempted;
-			} 
+			}
 
 			totalMarks = (correctQuestions * 2) * .1 / .1 - wrongQuestions * 0.25;
 		} catch (Exception e) {
 			System.out.println(e);
 		}
 	%>
-	<div style = "margin-top: 32px;">
+	<div style="margin-top: 32px;">
 		<table class="testResult">
-		<tr><td colspan="2" style="background-color: #3f72af"><h1 style="margin: 0; color: white">Test Result</h1></td></tr>
+			<tr>
+				<td colspan="2" style="background-color: #3f72af"><h1
+						style="margin: 0; color: white">Test Result</h1></td>
+			</tr>
 			<tr>
 				<td>Topic :</td>
 				<td>${sessionScope.topicName}</td>
@@ -78,12 +90,14 @@
 				<td><%=totalMarks%></td>
 			</tr>
 			<tr>
-			<td style="background-color: #f9f7f7;"><h3 align="center">
-			<a href='${pageContext.request.contextPath}'>Take Another Exam</a>
-		</h3></td>
-		<td style="background-color: #f9f7f7;"><h3 align="center">
-			<a href='${pageContext.request.contextPath}/jsps/solutions.jsp?topicName=<%=session.getAttribute("topicName")%>&tid=<%=session.getAttribute("topic_id")%>'>Check Solutions</a>
-		</h3></td>
+				<td style="background-color: #f9f7f7;"><h3 align="center">
+						<a href='${pageContext.request.contextPath}'>Take Another Exam</a>
+					</h3></td>
+				<td style="background-color: #f9f7f7;"><h3 align="center">
+						<a
+							href='${pageContext.request.contextPath}/jsps/solutions.jsp?topicName=<%=session.getAttribute("topicName")%>&tid=<%=session.getAttribute("topic_id")%>'>Check
+							Solutions</a>
+					</h3></td>
 			</tr>
 
 		</table>

@@ -1,6 +1,11 @@
+/********************* Roshan Kumar ***********************/
+
 CREATE DATABASE paperpractice;
 
 USE paperpractice;
+
+
+/* User Registration */
 
 DROP TABLE IF EXISTS User_Registration;
 
@@ -11,6 +16,9 @@ CREATE TABLE User_Registration (
    		PRIMARY KEY (Email_ID)
 )DEFAULT CHARSET=utf8;
 
+
+/* Admin Login */
+
 DROP TABLE IF EXISTS Admin_Login;
 
 CREATE TABLE Admin_Login (
@@ -19,8 +27,10 @@ CREATE TABLE Admin_Login (
    		PRIMARY KEY (Admin_ID)
 )DEFAULT CHARSET=utf8;
 
-insert into admin_login(admin_id,password) values('roshan','12345678');
+insert into admin_login(admin_id,password) values('admin','12345678');
 
+
+/* Section */
 
 DROP TABLE IF EXISTS Section;
 
@@ -38,7 +48,8 @@ values
 	('03','General Awareness'),
 	('04','Quantitative Aptitue');
 	
-use paperpractice;	
+	
+	/* Topic */
 	
 DROP TABLE IF EXISTS Topic;
 
@@ -50,7 +61,8 @@ CREATE TABLE Topic(
 		FOREIGN KEY (Section_ID) REFERENCES Section(Section_ID)
 )DEFAULT CHARSET = utf8;
 
-use paperpractice;
+
+/* Question */
 
 DROP TABLE IF EXISTS Question;
 
@@ -69,7 +81,8 @@ CREATE TABLE Question(
 		FOREIGN KEY (Topic_ID) REFERENCES Topic(Topic_ID)
 )DEFAULT CHARSET = utf8;
 
-use paperpractice;
+
+/* Feedback */
 
 DROP TABLE IF EXISTS Feedback;
 

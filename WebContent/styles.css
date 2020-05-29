@@ -1,4 +1,13 @@
+/********************* Roshan Kumar ***********************/
+
 @charset "ISO-8859-1";
+
+body {
+	font-family: 'B612', sans-serif;
+	background-color: #f9f7f7;
+	color: #112d4e;
+	margin: 0;
+}
 
 form {
 	border: 3px solid #dbe2ef;
@@ -6,13 +15,64 @@ form {
 	margin-block-end: 0;
 }
 
-/* Add a black background color to the top navigation */
+img {
+	display: block;
+	height: 150px;
+	width: 200px;
+}
+
+label {
+	display: inline-block;
+	margin-top: 12px;
+}
+
+br {
+	display: block;
+	content: "";
+	margin-top: 8px;
+}
+
+sup {
+	color: red;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 2px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button {
+	font-family: 'B612', sans-serif;
+	background-color: #3f72af;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+h1 {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
 .topnav {
 	background-color: #112d4e;
 	overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
 	float: left;
 	color: #f9f7f7;
@@ -23,19 +83,13 @@ form {
 
 .topnav a:visited {
 	color: #f9f7f7;
-} /* Visited link    */
+}
 
-/* Change the color of links on hover */
 .topnav a:hover {
 	background-color: white;
 	color: black;
 }
 
-/* Add a color to the active/current link 
-.topnav a.active {
-  background-color: #3f72af;
-  color: white;
-}*/
 .topnav-right {
 	float: right;
 }
@@ -55,12 +109,12 @@ form {
 }
 
 .instructions {
-	width: 25%; /* Set the width of the sidebar */
+	width: 25%;
 	background-color: #dbe2ef;
 	margin-top: 20px;
 }
 
-.test{
+.test {
 	margin: 48px 32px 0 32px;
 	padding: 48px;
 }
@@ -81,30 +135,13 @@ table.userHomeTable {
 	padding: 0;
 }
 
-br {
-	display: block;
-	content: "";
-	margin-top: 10px;
-}
-
 table.userHomeTable td {
 	padding: 20px 40px 20px 40px;
 	text-align: center;
 }
 
-img {
-	display: block;
-	height: 150px;
-	width: 200px;
-}
-
-label {
-	display: inline-block;
-	margin-top: 12px;
-}
-
 .topicList {
-	margin: 32px 120px;
+	margin: 32px 240px;
 }
 
 .adminForm {
@@ -128,17 +165,13 @@ label {
 	padding: 36px;
 }
 
-.addQuestion{
+.addQuestion {
 	margin: 24px 84px;
 	padding: 12px;
 }
 
-.addQuestion td{
+.addQuestion td {
 	padding: 16px;
-}
-
-sup {
-	color: red;
 }
 
 .warning {
@@ -151,29 +184,6 @@ sup {
 	padding: 16px 16px;
 }
 
-input[type=text], input[type=password] {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 2px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
-}
-
-button {
-	background-color: #3f72af;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-}
-
-button:hover {
-	opacity: 0.8;
-}
-
 .split {
 	height: 100%;
 	position: fixed;
@@ -183,8 +193,8 @@ button:hover {
 	margin: 32px;
 }
 
-h1 {
-	text-align: center;
+a:visited {
+	color: #0000EE;
 }
 
 .left {
@@ -205,47 +215,34 @@ h1 {
 	text-align: center;
 }
 
-a {
-	text-decoration: none;
-}
-
-a:visited {
-	color: #0000EE;
-} /* Visited link    */
-body {
-	font-family: 'Vollkorn', serif;
-	background-color: #f9f7f7;
-	color: #112d4e;
-	margin: 0;
-}
-
-.details{
+.details {
 	margin: 120px 340px;
 	padding: 0;
 }
 
-table.fixed { 
-	table-layout:fixed;
+table.fixed {
+	table-layout: fixed;
 	width: 84%;
-	margin-left:auto; 
-    margin-right:auto;
- }
-table.fixed td { 
-	background-color:  #dbe2ef;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.fixed td {
+	background-color: #dbe2ef;
 	padding: 12px 20px;
 	border-spacing: 10px;
-    border-collapse: separate;
+	border-collapse: separate;
 }
 
-table.testResult{
+table.testResult {
 	width: 64%;
-	margin-left:auto; 
-    margin-right:auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-table.testResult td{
-	background-color:  #dbe2ef;
+table.testResult td {
+	background-color: #dbe2ef;
 	padding: 14px 14px 14px 32px;
 	border-spacing: 10px;
-    border-collapse: separate;
+	border-collapse: separate;
 }

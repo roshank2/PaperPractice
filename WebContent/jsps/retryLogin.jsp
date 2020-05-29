@@ -5,6 +5,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>User Login</title>
+<link rel="icon" type="image/png" sizes="32x32"
+	href="${pageContext.request.contextPath}/resource/favicon-32x32.png">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/styles.css">
 <link
 	href="https://fonts.googleapis.com/css2?family=Alegreya:wght@900&family=B612:wght@700&family=Vollkorn&display=swap"

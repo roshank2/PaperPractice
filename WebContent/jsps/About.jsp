@@ -1,3 +1,8 @@
+
+<%
+	/********************* Roshan Kumar ***********************/
+%>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -5,6 +10,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>About</title>
+<link rel="icon" type="image/png" sizes="32x32"
+	href="${pageContext.request.contextPath}/resource/favicon-32x32.png">
 <link rel="stylesheet" href="styles.css">
 <link
 	href="https://fonts.googleapis.com/css2?family=Alegreya:wght@900&family=B612:wght@700&family=Vollkorn&display=swap"
@@ -13,7 +20,7 @@
 <body>
 	<%@include file="TopNav.jsp"%>
 	<div class="content links">
-		<div class="topicList">
+		<div style = "margin: 32px 120px;">
 			<h2 style="text-align: center;">About</h2>
 			<p align="justify">PaperPractice is an online website where
 				students can practice previous year topic wise questions in a

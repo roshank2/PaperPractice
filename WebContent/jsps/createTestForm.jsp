@@ -1,3 +1,8 @@
+
+<%
+	/********************* Roshan Kumar ***********************/
+%>
+
 <%@ page language="java" contentType="text/html; UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -5,6 +10,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Create Test</title>
+<link rel="icon" type="image/png" sizes="32x32"
+	href="${pageContext.request.contextPath}/resource/favicon-32x32.png">
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/styles.css">
 <link

@@ -1,3 +1,5 @@
+/********************* Roshan Kumar ***********************/
+
 package controller;
 
 import java.sql.Connection;
@@ -106,7 +108,7 @@ public class adminController {
 				ps.setString(1, null);
 				ps.setString(2, email);
 				ps.setString(3, feedback);
-				ps.setTimestamp(4,timeStamp);
+				ps.setTimestamp(4, timeStamp);
 				// System.out.println("Yes");
 
 				status = ps.executeUpdate();
@@ -117,15 +119,16 @@ public class adminController {
 		}
 		return status;
 	}
-	
-	public static int updateQuestion(int qid, String question, String option1, String option2, String option3, String option4,
-			int answer, String solution, int tid) {
+
+	public static int updateQuestion(int qid, String question, String option1, String option2, String option3,
+			String option4, int answer, String solution, int tid) {
 		int status = 0;
 		try {
 			Connection con = ConnectionProvider.getConnection();
 
 			PreparedStatement ps = con.prepareStatement("Update question set ques_id=?, question=?, "
-					+ "option1=?, option2=?, option3=?, option4=?, correct_ans=?, solution=?, topic_id=? where ques_id = " + qid);
+					+ "option1=?, option2=?, option3=?, option4=?, correct_ans=?, solution=?, topic_id=? where ques_id = "
+					+ qid);
 			ps.setInt(1, qid);
 			ps.setString(2, question);
 			ps.setString(3, option1);

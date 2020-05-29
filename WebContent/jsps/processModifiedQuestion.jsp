@@ -1,3 +1,8 @@
+
+<%
+	/********************* Roshan Kumar ***********************/
+%>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@page import="controller.adminController"%>
@@ -14,27 +19,26 @@
 	try {
 		qid = Integer.parseInt(request.getParameter("qid"));
 		tid = Integer.parseInt(request.getParameter("tid"));
-		answer = Integer.parseInt(request.getParameter("answer"));%>
-		<script>
-		<%int st = adminController.updateQuestion(qid,question, option1, option2, option3, option4, answer, solution, tid);%>
+		answer = Integer.parseInt(request.getParameter("answer"));
+%>
+<script>
+		<%int st = adminController.updateQuestion(qid, question, option1, option2, option3, option4, answer,
+						solution, tid);%>
 		var status = "<%=st%>"
-		if (status > 0){
-			alert("Question updated successfully")
-		}
-		else{
-			alert("Error, while updating question");
-		}
-		window.location = "${pageContext.request.contextPath}/jsps/AdminHome.jsp";
-		</script>
-	<%} catch (NumberFormatException ex) {
+	if (status > 0) {
+		alert("Question updated successfully")
+	} else {
+		alert("Error, while updating question");
+	}
+	window.location = "${pageContext.request.contextPath}/jsps/AdminHome.jsp";
+</script>
+<%
+	} catch (NumberFormatException ex) {
 		System.out.println(ex);
 	} finally {
 %><script>
-	alert("Error, while updating question"); 
-	window.location ="${pageContext.request.contextPath}/jsps/AdminHome.jsp";
-
-<%
-	}
-%>
-			
+	alert("Error, while updating question");
+	window.location = "${pageContext.request.contextPath}/jsps/AdminHome.jsp";
+<%}%>
+	
 </script>

@@ -1,9 +1,17 @@
+
+<%
+	/********************* Roshan Kumar ***********************/
+%>
+
 <jsp:useBean id="formHandler" class="bean.User" scope="request" />
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>User Registration</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/styles.css">
+<link rel="icon" type="image/png" sizes="32x32"
+	href="${pageContext.request.contextPath}/resource/favicon-32x32.png">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/styles.css">
 <link
 	href="https://fonts.googleapis.com/css2?family=Alegreya:wght@900&family=B612:wght@700&family=Vollkorn&display=swap"
 	rel="stylesheet">
@@ -24,7 +32,9 @@
 	</div>
 
 	<div class="split right">
-		<form action="${pageContext.request.contextPath}/jsps/processRegistration.jsp" method="post">
+		<form
+			action="${pageContext.request.contextPath}/jsps/processRegistration.jsp"
+			method="post">
 			<label for="uname"><b>Name</b></label><sup>*</sup><input type="text"
 				placeholder="Enter your full name" name="uname" /><br>
 			<div class="warning"><%=formHandler.getErrorMsg("uname")%></div>
@@ -43,7 +53,8 @@
 			</div>
 		</form>
 		<div class="containerdash">
-			<b>Already registered?</b> <a href="${pageContext.request.contextPath}/login">Login here</a>
+			<b>Already registered?</b> <a
+				href="${pageContext.request.contextPath}/login">Login here</a>
 		</div>
 	</div>
 </body>

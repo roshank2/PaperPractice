@@ -1,11 +1,19 @@
+
+<%
+	/********************* Roshan Kumar ***********************/
+%>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>User Login</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/styles.css">
+<link rel="icon" type="image/png" sizes="32x32"
+	href="${pageContext.request.contextPath}/resource/favicon-32x32.png">
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/styles.css">
 <link
 	href="https://fonts.googleapis.com/css2?family=Alegreya:wght@900&family=B612:wght@700&family=Vollkorn&display=swap"
 	rel="stylesheet">
@@ -24,15 +32,16 @@
 		</div>
 	</div>
 	<div class="split right">
-		<form action="${pageContext.request.contextPath}/jsps/UserLogin.jsp" method="post">
+		<form action="${pageContext.request.contextPath}/jsps/UserLogin.jsp"
+			method="post">
 			<label for="uemail"><b>Email-ID</b></label> <input type="text"
-				placeholder="Enter email-id" name="uemail" /> <label
-				for="upass"><b>Password</b></label> <input type="password"
-				placeholder="Enter Password" name="upass" />
+				placeholder="Enter email-id" name="uemail" /> <label for="upass"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="upass" />
 			<button type="submit">Login</button>
 		</form>
 		<div class="containerdash">
-			<b>New user?</b> <a href="${pageContext.request.contextPath}/register">Register here</a>
+			<b>New user?</b> <a
+				href="${pageContext.request.contextPath}/register">Register here</a>
 		</div>
 	</div>
 </body>

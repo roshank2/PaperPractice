@@ -11,7 +11,7 @@
 <body>
 	<script>
 	<%int st = adminController.deleteTopic(request.getParameter("tname"));%>
-	var status = "<%=st%>"
+	var status = "<%=st%>";
 		if (status > 0) {
 			alert("Topic deleted successfully");
 		} else {

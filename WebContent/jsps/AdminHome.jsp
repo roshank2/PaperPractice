@@ -1,4 +1,3 @@
-
 <%
 	/********************* Roshan Kumar ***********************/
 %>
@@ -19,6 +18,22 @@
 	rel="stylesheet">
 </head>
 <body>
+	<%
+		if (session.getAttribute("Admin") == null) {
+	%>
+	<script>
+		alert("Please, login first..");
+		window.location = "${pageContext.request.contextPath}/adminLogin";
+	</script>
+	<%
+		} else {
+	%>
+	<a style="position: absolute; top: 0; right: 0; margin: 32px;"
+		href="${pageContext.request.contextPath}/logout">Logout</a>
+
+	<%
+		}
+	%>
 	<div class="adminHome">
 		<h1 style="margin-bottom: 64px">Admin Operations</h1>
 		<a class="adminLinks"

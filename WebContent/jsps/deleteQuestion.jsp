@@ -1,4 +1,3 @@
-
 <%
 	/********************* Roshan Kumar ***********************/
 %>
@@ -23,10 +22,9 @@
 		}
 	%>
 	<script type="text/javascript">
-		var status = "<%=status%>
-		"
+		var status = "<%=status%>";
 		if (status > 0) {
-			alert("Question deleted successfully")
+			alert("Question deleted successfully");
 		} else {
 			alert("Error, while deleting question");
 		}

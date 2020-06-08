@@ -1,4 +1,3 @@
-
 <%
 	/********************* Roshan Kumar ***********************/
 %>
@@ -22,8 +21,8 @@
 	rel="stylesheet">
 </head>
 <body>
-	<div class="topicList">
-		<h2 style="text-align: center;">Topics</h2>
+	<div style="margin: 32px 384px;">
+		<h1 style="text-align: center; margin: 84px 0 56px 0;">Modify - Select Topic</h1>
 		<%
 			Connection con = (Connection) ConnectionProvider.getConnection();
 

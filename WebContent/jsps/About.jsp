@@ -1,4 +1,3 @@
-
 <%
 	/********************* Roshan Kumar ***********************/
 %>
@@ -40,6 +39,11 @@
 				complete the given test. There is an importance of time limit. SSC
 				examinations are not only about accuracy but also number of
 				questions attempted in the given time with utmost accuracy.</p>
+				
+				<p>
+					<h3 style="margin-bottom: 6px;">Contact</h3>
+					<span style = "margin-left: 48px;">Email: admin@paperpractice.com</span>
+				</p>
 		</div>
 	</div>
 	<div class="content instructions">

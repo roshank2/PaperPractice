@@ -23,7 +23,8 @@
 </head>
 <body>
 	<h1><%=request.getParameter("tname")%></h1>
-	<div class="topicList">
+	<div class="dispAdminQues">
+	<h2 style="margin: 0 0 32px 28px;">Select question to <%=request.getParameter("act") %></h2>
 		<%
 			Connection con = (Connection) ConnectionProvider.getConnection();
 			int i = 1;

@@ -1,4 +1,3 @@
-
 <%
 	/********************* Roshan Kumar ***********************/
 %>
@@ -23,7 +22,7 @@
 </head>
 <body>
 	<div class="adminHome">
-		<h1 style="margin-bottom: 64px">Category</h1>
+		<h1 style="margin-bottom: 64px">Modify - Select Category</h1>
 		<a class="adminLinks"
 			href="${pageContext.request.contextPath}/jsps/displayTopicsAdmin.jsp?section_id=1">Reasoning</a>
 		<a class="adminLinks"
